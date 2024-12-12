@@ -15,7 +15,14 @@
      <div id="root">
         <h1>hello,{{school.name.toUpperCase()}}</h1>
         <h1>学校坐落在: {{school.address}}</h1>
-        <h1>我学的是: {{school.subject()}}</h1>
+        <h1>我学的是: {{school.subject()}}学科</h1>
+        <hr>
+        <!-- 最终展示的是name -->
+        <h1>{{school.name,school.address}}</h1>   
+        <!-- 最终展示的是address -->
+        <h1>{{school.name && school.address}}</h1>
+        <!-- 最终展示的是1 -->
+        <h1>{{school.name ? 1:2}}</h1>
      </div>
      <script type="text/javascript">
         //创建一个Vue的实例对象,并传入配置对象
